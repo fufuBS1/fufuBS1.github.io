@@ -12,6 +12,7 @@ body {
     color: #B0BABC;
     margin: 20px;
     text-decoration: none;
+    cursor: all-scroll;
 }
 
 #img {
@@ -22,6 +23,17 @@ body {
 
 #banniere  {
     width: 100%;
+}
+
+/* Initialement caché */
+span {
+    opacity: 0;
+    transition: opacity 0.2s ease-in;
+}
+
+/* Visible */
+span.visible {
+    opacity: 1;
 }
 
 /*HEADER*/
@@ -46,7 +58,6 @@ body {
     font-family: Montserrat, sans-serif;
     color: white;
 }
-
 .switcher::after {
     content: '';
     position: absolute;
@@ -75,7 +86,11 @@ main {
     justify-content: space-evenly;
     gap: 30px;
 }
-
+.set {
+    margin-left: 20px;
+    color: #B0BABC;
+    font-family: Montserrat, sans-serif;
+}
 #information {
     background-color: #26292F;
     border-radius: 10px;
