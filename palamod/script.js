@@ -1,6 +1,6 @@
 async function getDiscordMemberCount() {
     const guildId = "1025811373780893757"; // Remplace avec l'ID de ton serveur Discord
-    const response = await fetch(`https://discord.com/api/v9/invites/yHBahjaWAJ?with_counts=true`);
+    const response = await fetch("https://cors-anywhere.herokuapp.com/https://discord.com/api/v9/invites/yHBahjaWAJ?with_counts=true");
     const data = await response.json();
     
     if (data.approximate_member_count) {
