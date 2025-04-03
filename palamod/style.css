@@ -163,6 +163,7 @@ hr {
 
 /*more*/
 #more {
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -173,6 +174,7 @@ hr {
     width: 205px;
     height: auto;
     margin: 10px;
+    margin-top: 0;
     border-radius: 10px;
 }
 
@@ -243,4 +245,15 @@ footer {
     font-family: 'Poppins', sans-serif;
     color: white;
     margin-left: 20px;
+}
+
+/*mobile*/
+@media only screen and (max-width: 768px) {
+#icon{
+    display: none;
+}
+
+#switch{
+    margin-left: auto;
+}
 }
