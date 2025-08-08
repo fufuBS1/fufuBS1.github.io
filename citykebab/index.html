@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Kebab - Le meilleur kebab de Dieuze</title>
+    <link id="logo" rel="icon" href="image/logo kebab.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <button class="burger-menu" id="burgerMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header> 
+    
+    <main>
+        <section id="accueil">
+            <div class="auto-slider-container">
+                <div class="auto-slider-wrapper" id="autoSliderWrapper">
+                    <img src="image/slide1.jpg" alt="Image automatique 1">
+                    <img src="image/slide2.jpg" alt="Image automatique 2">
+                    <img src="image/slide3.jpg" alt="Image automatique 3">
+                    <img src="image/slide4.jpg" alt="Image automatique 4">
+                    <img src="image/slide5.jpg" alt="Image automatique 5">
+                </div>
+                <div class="auto-slider-progress-bar">
+                    <div class="auto-slider-progress" id="autoSliderProgress"></div>
+                </div>
+            </div>
+
+            <section id="horaires">
+                <h3>Horaires d'ouverture</h3>
+                <table>
+                    <tr><td>Lundi - Samedi :</td><td><strong>11h - 14h30</strong> / <strong>17h - 23h</strong></td></tr>
+                    <tr><td>Dimanche :</td><td><strong>17h - 23h</strong></td></tr>
+                </table>
+                <p>🕒 Ouvert 7j/7</p>
+            </section>
+
+            <div class="cta-button-container">
+                <a href="#menu" class="cta-button">Découvrir notre menu</a>
+            </div>
+        </section>
+
+
+        <section id="services">
+            <h2>Nos Services</h2>
+            <div class="service-grid">
+                <div class="service-item">
+                    <span>🥡</span>
+                    <p>Vente à emporter</p>
+                </div>
+                <div class="service-item">
+                    <span>🪑</span>
+                    <p>Repas sur place</p>
+                </div>
+                <div class="service-item">
+                    <span>♿</span>
+                    <p>Accessibilité PMR</p>
+                </div>
+                <div class="service-item">
+                    <span>🕌</span>
+                    <p>Viande halal</p>
+                </div>
+                <div class="service-item">
+                    <span>💳</span>
+                    <p>Paiement : Carte / Espèces / Tickets Restaurant</p>
+                </div>
+                <div class="service-item">
+                    <span>🧸</span>
+                    <p>Menu enfants<br>🎁 Un jouet offert<br>Filles / Garçons</p>
+                </div>
+                <div class="service-item">
+                    <span>⛱️</span>
+                    <p>Tables en terrasse<br>Repas agréable en extérieur</p>
+                </div>
+                <div class="service-item">
+                    <span>🍻</span>
+                    <p>Boissons alcoolisées <br>Vins (rouge / rosé) <br>Bières : (Desperados / Heineken / Efes Draft)</p>
+                </div>
+            </div> 
+            <div id="service-livraison"><img src="image/livraison.png"><p>3€ la livraison à Dieuze dès 20€ de commande.</p></div>
+        </section>
+
+        <section id="menu">
+            <h2>Notre Carte</h2>
+            <div class="slider">
+                <div class="arrow left" onclick="manualSlider.prev()">❮</div>
+                <div class="slides" id="slides"></div>
+                <div class="arrow right" onclick="manualSlider.next()">❯</div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Nous trouver</h2>
+            <div class="contact-info">
+                <p><img src="image/map.png" alt="Adresse"><a href="https://www.google.com/maps/place/City+Kebab/@48.8109377,6.7159854,17z/data=!4m10!1m2!2m1!1sCity+Kebab,+Rue+Clemenceau,+57260+Dieuze!3m6!1s0x47946704a832b2e1:0xfb3eab07d551bea1!8m2!3d48.8112844!4d6.7182434!15sCihDaXR5IEtlYmFiLCBSdWUgQ2xlbWVuY2VhdSwgNTcyNjAgRGlldXplWigiJmNpdHkga2ViYWIgcnVlIGNsZW1lbmNlYXUgNTcyNjAgZGlldXplkgEUZmFzdF9mb29kX3Jlc3RhdXJhbnSqAV4KDS9nLzExZ2ZoNHB6anMQATIfEAEiG56F8yvNa_anpaJYuEN7-sD6mr-mm7JY8eTgVjIqEAIiJmNpdHkga2ViYWIgcnVlIGNsZW1lbmNlYXUgNTcyNjAgZGlldXpl4AEA!16s%2Fg%2F11gfh4pzjs?entry=ttu&g_ep=EgoyMDI1MDgwNC4wIKXMDSoASAFQAw%3D%3D" target="_blank"> Rue Clemenceau, 57260 Dieuze</a></p>
+                <p><img src="image/call.png" alt="Téléphone"> <a href="tel:0387868302">03 87 86 83 02</a></p>
+                <p><img src="image/mail.png" alt="Email"> <a href="mailto:hamid@citykebab-dieuze.fr">hamid@citykebab-dieuze.fr</a></p>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>© 2025 City Kebab - Tous droits réservés.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
